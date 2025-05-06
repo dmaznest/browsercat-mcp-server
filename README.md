@@ -1,5 +1,7 @@
 # BrowserCat MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@dmaznest/browsercat-mcp-server)](https://smithery.ai/server/@dmaznest/browsercat-mcp-server)
+
 A Model Context Protocol server that provides browser automation capabilities using BrowserCat's cloud browser service. This server enables LLMs to interact with web pages, take screenshots, and execute JavaScript in a real browser environment without needing to install browsers locally.
 
 ## Components
@@ -58,11 +60,13 @@ The server provides access to two types of resources:
 
 ## Configuration to use BrowserCat MCP Server
 
-### Environment Variables
+### Installing via Smithery
 
-The BrowserCat MCP server requires the following environment variable:
+To install browsercat-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@dmaznest/browsercat-mcp-server):
 
-- `BROWSERCAT_API_KEY`: Your BrowserCat API key (required). You can get one for free at https://browsercat.xyz/mcp.
+```bash
+npx -y @smithery/cli install @dmaznest/browsercat-mcp-server --client claude
+```
 
 ### NPX Configuration
 
